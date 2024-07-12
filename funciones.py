@@ -36,6 +36,18 @@ def AsignaSueldo():
         controlador.writerow(['Francisco Díaz', random.randint(300000,2500000)])
         controlador.writerow(['Elena Fernández', random.randint(300000,2500000)])
     
+def imprime():
+    categoria1 = []
+    categoria2 = []
+    categoria3 = []
+    total_pagado = 0
+    with open('AsignaSueldos.csv', 'r', newline='') as ag: 
+        leer_archivo = csv.reader(ag)
+            
+        for row in leer_archivo:
+            empleado, monto = row
+            print(f"{empleado}           ${monto}")
+
     
     #for i in trabajadores:
     #    controlador.writerow(trabajadores)

@@ -2,6 +2,8 @@ import random
 import csv
 from funciones import Menu, AsignaSueldo
 
+
+
 def main():
     while True:
         op=Menu()
